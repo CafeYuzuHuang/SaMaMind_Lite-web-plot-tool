@@ -1,0 +1,88 @@
+html {
+	background-color: #F0F8FF;
+	color: #4169E1; /* foreground */
+	font-family: 'Microsoft JhengHei UI';
+}
+
+#title { /* page title; use id selector */
+	letter-spacing: 2px;
+	text-align: center;
+	background-color: #FFEFD5;
+	color: #A0522D; /* foreground */
+	font-weight: bold;
+	font-family: 'Microsoft JhengHei UI';
+	border-style: ridge;
+	margin: 40px 80px 40px 60px; /* top right bottom left */
+	padding: 5px 10px 5px 10px;
+}
+
+fieldset {
+	margin: 40px 80px 40px 60px;
+	padding: 30px 45px 20px 45px;
+}
+
+legend {
+	color: #483D8B;
+	font-size: 20px; /* default span font size: 16px */
+	font-weight: bold;
+}
+
+input { /* input field */
+	background-color: #F0FFFF;
+	color: #6495ED;
+	font-weight: bold;
+}
+
+input[type="file"]::-webkit-file-upload-button { /* Chrome, Edge & Safari webbrowsers */
+	background-color: #F0FFFF;
+	color: #6495ED;
+	border-color: #6495ED;
+	font-weight: bold;
+	margin: 4px 8px 4px 8px;
+	padding: 2px 4px 2px 4px;
+	cursor: pointer;
+}
+
+input[type="button"] {
+	background-color: #F0FFFF;
+	color: #6495ED;
+	border-color: #6495ED;
+	font-weight: bold;
+	margin: 4px 8px 4px 8px;
+	padding: 2px 4px 2px 4px;
+	cursor: pointer;
+}
+
+button {
+	background-color: #F0FFFF;
+	color: #6495ED;
+	border-color: #6495ED;
+	font-weight: bold;
+	margin: 4px 8px 4px 8px;
+	padding: 2px 4px 2px 4px;
+	cursor: pointer;
+}
+
+.warn_msg {
+	color: #DB7093;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+footer {
+	font-size: 12px; /* default span font size: 16px */
+	padding-left: 24px;
+	/*
+	position: absolute;
+	left: 10%;
+	bottom: 10%;
+	position-anchor: 50% 50%;
+	*/
+}
+
+a {
+	color: blue;
+}
+
+/* End */

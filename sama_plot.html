@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+	  	<script type="text/javascript" src="sama_main.js"></script>
+		<link rel="stylesheet" type="text/css" href="sama_fmt.css">
+		<h2 id="title">SaMaMind_Lite回測結果作圖</h2>
+		<hr>
+	</head>
+	<body>
+		<fieldset>
+			<legend>請提供證券原始資料與計算結果</legend>
+			<input type="file" accept="text/plain" onchange="openFile1(event)">載入價量與技術指標資料<br>
+			<input type="file" accept="text/plain" onchange="openFile2(event)">載入資產紀錄資料<br>
+			<input type="button" value="清除資料" onclick="document.location.reload(true)"><br> <!-- Page reload -->
+		</fieldset><br>
+		<hr>
+		<fieldset class="warn_msg" id="req_msg">
+			<p>請先載入以上檔案...(注意目前尚未提供任何檔案資訊的驗證功能，煩請使用者自行確認)</p>
+		</fieldset><br>
+		<fieldset id="perf_plot" style="display:none"> <!-- Visible if all files have been loaded successfully -->
+			<button type="button" onclick="drawPlot()">回測結果出圖</button><br>
+			<span>    </span> <!-- Offer some hints or info -->
+			<div id="output"> <!-- Draw plot in this block -->
+			</div>
+		</fieldset><br>
+		<hr>
+		<footer>
+			<figure style="float:right">
+				<img src="./images/sama_ico.jpg" alt="可愛的柚子" width="60" height="60" style="margin:6px padding:2px">
+			</figure>
+			<br>
+			<span>拜訪作者：<a href="https://github.com/CafeYuzuHuang">YuzuHuang</a></span><br>
+			<span>最後更新：2021.06.09 <br>版本：0.0.01</span>
+		</footer>
+	</body>
+</html>
+
